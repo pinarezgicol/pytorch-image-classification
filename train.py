@@ -22,10 +22,10 @@ args= vars(ap.parse_args())
 train_mode=args["mode"]
 
 # Set the train and validation directory paths
-train_directory = './kaggle/working/stanford-cats/train/images'
-valid_directory = './kaggle/working/stanford-cats/validation/images'
+train_directory = 'kaggle/working/stanford-cats/train/images'
+valid_directory = 'kaggle/working/stanford-cats/validation/images'
 # Set the model save path
-PATH="./kaggle/working/trained_model.pth"
+PATH="kaggle/working/trained_model.pth"
 
 # Batch size
 bs = 64 
