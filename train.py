@@ -15,17 +15,17 @@ from matplotlib import pyplot as plt
 
 # Construct argument parser
 ap = argparse.ArgumentParser()
-ap.add_argument("--mode", required=True, help="Training mode: finetue/transfer/scratch")
+ap.add_argument("--mode", required=True, help="Training mode: finetune/transfer/scratch")
 args= vars(ap.parse_args())
 
 # Set training mode
 train_mode=args["mode"]
 
 # Set the train and validation directory paths
-train_directory = 'imds_small/train'
-valid_directory = 'imds_small/val'
+train_directory = './kaggle/working/stanford-cats/train/images'
+valid_directory = './kaggle/working/stanford-cats/validation/images'
 # Set the model save path
-PATH="model.pth" 
+PATH="./kaggle/working/trained_model.pth"
 
 # Batch size
 bs = 64 
